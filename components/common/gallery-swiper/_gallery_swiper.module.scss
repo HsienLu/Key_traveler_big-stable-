@@ -1,0 +1,57 @@
+@import '@/styles/variables';
+
+.swiper-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  .swiper-bg {
+    // height: 100%;
+    width: 100%;
+    height: 465px;
+    border-radius: 10px;
+    border: 1px solid #f9f1e7;
+    .swiper-slide {
+      height: 100%;
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        display: block;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .swiper-sm {
+    height: 75px;
+    width: 100%;
+    .swiper-slide {
+      border-radius: 10px;
+      overflow: hidden;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 75px;
+      height: 75px;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .swiper-container {
+    .swiper-bg {
+      height: 265px;
+    }
+  }
+}
